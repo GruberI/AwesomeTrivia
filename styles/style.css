@@ -1,0 +1,29 @@
+body {
+    background-image: url(/img/pattern-black.png);
+}
+
+.card {
+    margin-top: 220px;
+}
+
+.logoImg {
+    padding-top: 30px;
+    padding-left: 110px;
+}
+
+.card-text {
+    font-size: 1.5em;
+    margin: 50px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn-success {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    padding-right: 50px;
+}
