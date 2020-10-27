@@ -11,6 +11,8 @@ class Trivia {
 
         this.counterCorrect = 0
         this.counterWrong = 0
+        this.correctAns = ''
+        
     }
 
     startClick() {
@@ -34,7 +36,8 @@ class Trivia {
         let questionPicked = this.questions[randomQuestion].ques;
         let categoryPicked = this.questions[randomQuestion].category;
         let answersPicked = this.questions[randomQuestion].ans;
-        let correctAnswer = this.questions[randomQuestion].correct;
+        // let correctAnswer = this.questions[randomQuestion].correct;
+        this.correctAns = this.questions[randomQuestion].correct;
 
         // link answwers to buttons
         document.getElementById("btn-1").innerHTML = answersPicked[0]
@@ -51,22 +54,21 @@ class Trivia {
         
         // show category on card
         document.getElementById("category-card").innerHTML = categoryPicked
-        return questionPicked + categoryPicked + correctAnswer
+        return questionPicked + categoryPicked 
     }
 
     // check if clicked button is correct
     // increment counter 
     // increment wrong and correct internal counter
     // move to next question (call questionDisplay)
-    isCorrect() {
-        let wrongCount = 0;
-        let correctCount = 0;
-
-        if (answersPicked[i] === correctAnswer) {
-            correctCount++
+    isCorrect(content) {
+ 
+        console.log( content ,this.correctAns)
+        if (content === this.correctAns) {
+            this.counterCorrect++
             return true
         } else {
-            wrongCount++
+            this.counterWrong++
             return false
         }
 
