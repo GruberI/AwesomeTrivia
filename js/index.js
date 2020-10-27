@@ -128,57 +128,62 @@ btnStart.addEventListener('click', function() {
 });
 
 btn1.addEventListener('click', function() {
-    if (triviaGame.isCorrect() === true) {
+    if (triviaGame.isCorrect(btn1.innerHTML)) {
         //change button to green
         btn1.classList.remove("btn-light")
         btn1.classList.add("btn-success")
-    } else if (triviaGame.isCorrect() === false) {
+    } else {
         //change button to red
         btn1.classList.remove("btn-light")
         btn1.classList.add("btn-danger")
     }
     //set timeout 1 sec
     //cal questionDisplay
+    triviaGame.questionDisplay();
 })
 
 btn2.addEventListener('click', function() {
-    if (triviaGame.isCorrect() === true) {
-        //change button to green
+    console.log(btn2.innerHTML)
+    if (triviaGame.isCorrect(btn2.innerHTML)) {
+        //change button to green  
         btn2.classList.remove("btn-light")
         btn2.classList.add("btn-success")
-    } else if (triviaGame.isCorrect() === false) {
+    } else {
         //change button to red
         btn2.classList.remove("btn-light")
         btn2.classList.add("btn-danger")
     }
     //set timeout 1 sec
     //cal questionDisplay
+    triviaGame.questionDisplay();
 })
 
 btn3.addEventListener('click', function() {
-    if (triviaGame.isCorrect() === true) {
+    if (triviaGame.isCorrect(btn3.innerHTML)) {
         //change button to green
         btn3.classList.remove("btn-light")
         btn3.classList.add("btn-success")
-    } else if (triviaGame.isCorrect() === false) {
+    } else {
         //change button to red
         btn3.classList.remove("btn-light")
         btn3.classList.add("btn-danger")
     }
     //set timeout 1 sec
     //cal questionDisplay
+    triviaGame.questionDisplay();
 })
 
 btn4.addEventListener('click', function() {
-    if (triviaGame.isCorrect() === true) {
+    if (triviaGame.isCorrect(btn4.innerHTML)) {
         //change button to green
         btn4.classList.remove("btn-light")
         btn4.classList.add("btn-success")
-    } else if (triviaGame.isCorrect() === false) {
+    } else {
         //change button to red
         btn4.classList.remove("btn-light")
         btn4.classList.add("btn-danger")
     }
     //set timeout 1 sec
     //cal questionDisplay
+    triviaGame.questionDisplay();
 })
