@@ -79,7 +79,7 @@ class Trivia {
     startClick() {
         //show hidden buttons
         //question display
-        //toggle between background
+
     }
 
     //getting the random question
