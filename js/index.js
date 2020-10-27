@@ -24,7 +24,7 @@ var questions = [{
     divClass: "General Knowledge"
 },
 {
-    ques: "Who was the lead in Mad Max: Furry Road?",
+    ques: "Who was the lead in Mad Max: Fury Road?",
     ans: ["Joaquin Phoenix", "Scarlett Johansson", "Margot Robbie ", "Charlize Theron"],
     correct: "Charlize Theron",
     divClass: "Films"
