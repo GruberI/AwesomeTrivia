@@ -66,4 +66,38 @@ var questions = [{
     category: "Literature"
 }
 ] 
-// questions and answers object
+
+//create Trivia class w/ Methods
+class Trivia {
+    constructor(questions){
+        this.questions = questions;
+
+        this.counterCorrect = 0
+        this.counterWrong = 0
+    }
+
+    startClick() {
+        //show hidden buttons
+        //question display
+        //toggle between background
+    }
+
+    //getting the random question
+    questionDisplay(){
+        let randomQuestion = Math.floor(Math.random() * this.questions.length);
+        let questionPicked = this.questions[randomQuestion];
+        this.questions.splice(randomQuestion, 1)
+
+        console.log(this.questions[randomQuestion].ques)
+
+        return this.questions[randomQuestion].ques;
+    
+    }
+
+}
+
+const triviaGame = new Trivia(questions);
+
+triviaGame.questionDisplay()
+
+
