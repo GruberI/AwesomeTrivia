@@ -19,7 +19,13 @@ body {
     text-align: center;
 }
 
-.btn-success {
+.ans-btn {
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+}
+
+#btn-start {
     margin: 0;
     position: absolute;
     left: 50%;
