@@ -7,7 +7,7 @@ body {
     0px;
 }
 
-.logoImg {
+.logo-img {
     padding-top: 30px;
     padding-left: 110px;
 }
@@ -27,4 +27,29 @@ body {
     transform: translate(-50%, -50%);
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.background-literature{
+    background-image: url(/img/pattern-blue.png);
+}
+
+.background-knowledge{
+    background-image: url(/img/pattern-yellow.png);
+}
+
+.background-films {
+    background-image: url(/img/pattern-purple.png);
+}
+
+.background-food {
+    background-image: url(/img/pattern-red.png);
+}
+
+.background-science {
+    background-image: url(/img/pattern-green.png);
+}
+
+#container-buttons {
+    /* display: none; */
+    visibility: hidden;
 }
