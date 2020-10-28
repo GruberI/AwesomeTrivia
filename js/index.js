@@ -121,12 +121,12 @@ var questions = [{
 }
 ] 
 
-<<<<<<< HEAD
+
 //create Trivia class w/ Methods
 
 //Event listener?
 
-<<<<<<< HEAD
+
 // btn-success.addEventListener('click', () => {
     // if (btnLeft.innerHTML === "START"){
     //   chronometer.startClick(printTime);
@@ -147,13 +147,12 @@ var questions = [{
 //         //toggle between background
 //         document.getElementsByClassName("all-btns").setClass.remove("d-none")
 //         console.log(document.getElementsByClassName("all-btns"))
-=======
-    startClick() {
+
+   // startClick() {
         //show hidden buttons
         //question display
 
-    }
->>>>>>> 67a45249d2551ac9869a26d94a10014c5c1ed5d7
+  //  }
 
 //         document.getElementById("start-page").setClass.add("d-none")
         
@@ -172,9 +171,9 @@ var questions = [{
 //     }
 
 // }
-=======
+
 // CODE
->>>>>>> 1c66edf82e61eea7addc2ad4548606d2bf20f7a4
+
 
 const triviaGame = new Trivia(questions);
 
