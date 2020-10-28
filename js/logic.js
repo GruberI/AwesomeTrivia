@@ -39,7 +39,7 @@ class Trivia {
         // let correctAnswer = this.questions[randomQuestion].correct;
         this.correctAns = this.questions[randomQuestion].correct;
 
-        // link answwers to buttons
+        // link answers to buttons
         document.getElementById("btn-1").innerHTML = answersPicked[0]
         document.getElementById("btn-2").innerHTML = answersPicked[1]
         document.getElementById("btn-3").innerHTML = answersPicked[2]
@@ -62,7 +62,8 @@ class Trivia {
     // increment wrong and correct internal counter
     // move to next question (call questionDisplay)
     isCorrect(content) {
- 
+        
+
         console.log( content ,this.correctAns)
         if (content === this.correctAns) {
             this.counterCorrect++
