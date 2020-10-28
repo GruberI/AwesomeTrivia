@@ -71,6 +71,7 @@ var questions = [{
 
 //Event listener?
 
+<<<<<<< HEAD
 // btn-success.addEventListener('click', () => {
     // if (btnLeft.innerHTML === "START"){
     //   chronometer.startClick(printTime);
@@ -91,6 +92,13 @@ var questions = [{
 //         //toggle between background
 //         document.getElementsByClassName("all-btns").setClass.remove("d-none")
 //         console.log(document.getElementsByClassName("all-btns"))
+=======
+    startClick() {
+        //show hidden buttons
+        //question display
+
+    }
+>>>>>>> 67a45249d2551ac9869a26d94a10014c5c1ed5d7
 
 //         document.getElementById("start-page").setClass.add("d-none")
         
