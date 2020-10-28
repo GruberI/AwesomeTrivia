@@ -3,7 +3,7 @@
 }
 
 .card {
-    margin-top: 10rem;
+    margin-top: 6rem;
     position: relative;
 }
 
@@ -91,4 +91,9 @@
 
 #container-buttons {
     visibility: hidden;
+}
+
+.btn-end {
+    background-color: green;
+    color: white;
 }

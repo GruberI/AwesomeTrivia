@@ -64,6 +64,60 @@ var questions = [{
     ans: ["Old Yeller", "It", "Horns", "Cujo"],
     correct: "Cujo",
     category: "Literature"
+},
+{
+    ques: "What year was the first model of the iPhone released?",
+    ans: ["2005", "2007", "2009", "Taco"],
+    correct: "2007",
+    category: "General Knowledge"
+},
+{
+    ques: "What was Superman's birth name?",
+    ans: ["Alfred", "Clark Kent", "Ra's al Ghul", "Kal-El"],
+    correct: "Kal-El",
+    category: "General Knowledge"
+},
+{
+    ques: "What part of the atom has no electric charge?",
+    ans: ["Neutron", "Proton", "Electron", "Isotope"],
+    correct: "Neutron",
+    category: "Science and Geography"
+},
+{
+    ques: "Who discovered penicillin?",
+    ans: ["Louis Pasteur", "Robert Koch", "Alexander Fleming", "Marie Curie"],
+    correct: "Alexander Fleming",
+    category: "Science and Geography"
+},
+{
+    ques: "Which country invented tea?",
+    ans: ["India", "England", "China", "Japan"],
+    correct: "China",
+    category: "Food and Drink"
+},
+{
+    ques: "Which kind of alcohol is Russia is notoriously known for?",
+    ans: ["Champagne", "Vodka", "Tequila", "Beer"],
+    correct: "Vodka",
+    category: "Food and Drink"
+},
+{
+    ques: "Name That Author: Who wrote The Iliad?",
+    ans: ["Euripides", "Beowulf", "Homer", "Virgil"],
+    correct: "Homer",
+    category: "Literature"
+},
+{
+    ques: "What was Marilyn Monroe's name at birth?",
+    ans: ["Abbie Naylor Pressley", "Norma Jeane Mortenson", "Sarah Michelle Geller", "Eva Marie Saint"],
+    correct: "Norma Jeane Mortenson",
+    category: "Film"
+},
+{
+    ques: "What year was the first Toy Story film released in cinemas?",
+    ans: ["1995", "1999", "1990", "1989"],
+    correct: "1995",
+    category: "Film"
 }
 ] 
 
@@ -77,6 +131,7 @@ const btn1 = document.getElementById('btn-1');
 const btn2 = document.getElementById('btn-2');
 const btn3 = document.getElementById('btn-3');
 const btn4 = document.getElementById('btn-4');
+const btnRestart = document.getElementById('btn-restart')
 
 btnStart.addEventListener('click', function() {
     triviaGame.startClick();
@@ -97,16 +152,19 @@ btn1.addEventListener('click', function() {
         btn1.classList.add("btn-danger")
     }
    
-    if (triviaGame.isFinished()) {
+    if (triviaGame.isFinished() === true) {
         setTimeout(function() {
             triviaGame.gameEnd();
             }, 1000);
-    } else {
+    } else if (triviaGame.notFinished() === true){
         setTimeout(function() {
             triviaGame.questionDisplay();
             triviaGame.resetButtons();
             }, 1000);
     }
+
+    // counter on how many questions
+    triviaGame.totalQuestions++
     
 })
 
@@ -122,10 +180,19 @@ btn2.addEventListener('click', function() {
         btn2.classList.add("btn-danger")
     }
     
-    setTimeout(function() {
-        triviaGame.questionDisplay();
-        triviaGame.resetButtons();
-        }, 1000);
+    if (triviaGame.isFinished() === true) {
+        setTimeout(function() {
+            triviaGame.gameEnd();
+            }, 1000);
+    } else if (triviaGame.notFinished() === true){
+        setTimeout(function() {
+            triviaGame.questionDisplay();
+            triviaGame.resetButtons();
+            }, 1000);
+    }
+
+    // counter on how many questions
+    triviaGame.totalQuestions++
     
 })
 
@@ -140,10 +207,19 @@ btn3.addEventListener('click', function() {
         btn3.classList.add("btn-danger")
     }
 
-    setTimeout(function() {
-        triviaGame.questionDisplay();
-        triviaGame.resetButtons();
-        }, 1000);
+    if (triviaGame.isFinished() === true) {
+        setTimeout(function() {
+            triviaGame.gameEnd();
+            }, 1000);
+    } else if (triviaGame.notFinished() === true){
+        setTimeout(function() {
+            triviaGame.questionDisplay();
+            triviaGame.resetButtons();
+            }, 1000);
+    }
+
+    // counter on how many questions
+    triviaGame.totalQuestions++
 })
 
 btn4.addEventListener('click', function() {
@@ -157,8 +233,26 @@ btn4.addEventListener('click', function() {
         btn4.classList.add("btn-danger")
     }
     
-    setTimeout(function() {
-        triviaGame.questionDisplay();
-        triviaGame.resetButtons();
-        }, 1000);
+    if (triviaGame.isFinished() === true) {
+        setTimeout(function() {
+            triviaGame.gameEnd();
+            }, 1000);
+    } else if (triviaGame.notFinished() === true){
+        setTimeout(function() {
+            triviaGame.questionDisplay();
+            triviaGame.resetButtons();
+            }, 1000);
+    }
+
+    // counter on how many questions
+    triviaGame.totalQuestions++
+})
+
+btnRestart.addEventListener('click', function(){
+    // triviaGame.startClick();
+    triviaGame.restart();
+    triviaGame.questionDisplay();
+
+    document.getElementById("finish-page").classList.add("d-none")
+    document.getElementById("start-page").classList.remove("d-none")
 })

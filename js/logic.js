@@ -12,7 +12,7 @@ class Trivia {
         this.counterCorrect = 0
         this.counterWrong = 0
         this.correctAns = ''
-        this.totalQuestions = 0
+        this.totalQuestions = 1
         
     }
 
@@ -26,6 +26,10 @@ class Trivia {
         // START PAGE SHOULD HIDE
         const hiddenStart = (document.getElementById("start-page"))
         hiddenStart.classList.add("d-none")
+
+        //FINISH PAGE
+        // const hiddenFinish = (document.getElementById("finish-page"))
+        // hiddenFinish.classList.add("d-none")
 
     }
 
@@ -75,17 +79,19 @@ class Trivia {
                 break;
         }
 
-        // counter on how many questions
-        this.totalQuestions++
-
         // show category on card
         document.getElementById("category-card").innerHTML = categoryPicked
-        return questionPicked + categoryPicked 
+        this.progressDisplay()
+        this.resetButtons();
+
+        // return questionPicked + categoryPicked 
 
     }
 
+    
+
     resetButtons() {
-        if (this.questionDisplay()) {
+        
            
             let clickedButtons = document.getElementsByClassName("btn")
             for  ( var i = 0; i < clickedButtons.length; i++) {
@@ -106,7 +112,7 @@ class Trivia {
                     clickedButtons[i].classList.add("btn-light")
                 }
             }
-        }
+        
 
     }
 
@@ -134,11 +140,58 @@ class Trivia {
         }
       }
 
+      notFinished() {
+        if (this.totalQuestions < 10)
+            return true;
+        else {
+            return false;
+        }
+    }
 
-    // progressDisplay() {
-    //     for (let i = 1 ; i < 11; i++)
-    //     document.getElementById("counter").innerHTML = `This is question: ${i}/10`
-    // }
+      gameEnd(){
+
+        // Hide THE BUTTONS ON START CLICK
+        const hiddenButtons = (document.getElementsByClassName("all-btns"));
+        for(let button of hiddenButtons){button.classList.add("d-none")};
+        
+
+        // Question page should hide
+        const hiddenQuestion = (document.getElementById("questions-page"));
+        hiddenQuestion.classList.add("d-none");
+
+        //show finish page
+        const hiddenFinish = (document.getElementById("finish-page"));
+        hiddenFinish.classList.remove("d-none");
+
+
+        document.getElementById("counter-finish").innerHTML = `You answered ${this.counterCorrect} out of 10 correctly!`
+        console.log(this.counterCorrect)
+
+
+
+          if (this.counterCorrect >= 1 && this.counterCorrect <= 5) {
+            document.getElementById("result-title").innerHTML = "Umm, you can do better!"
+          } else if (this.counterCorrect >= 6 && this.counterCorrect < 8) {
+            document.getElementById("result-title").innerHTML = "Not that bad...(but not great either)!"
+          } else if (this.counterCorrect >= 8) {
+            document.getElementById("result-title").innerHTML = "Wow, you must be a genius!"
+          } else {
+            document.getElementById("result-title").innerHTML = "Wow...not one, better go study!"
+          }
+
+      } 
+
+
+    progressDisplay() {
+        document.getElementById("counter").innerHTML = `Question: ${this.totalQuestions} / 10`
+        // console.log(this.counterCorrect)
+    }
+
+    restart(){
+        this.counterCorrect = 0;
+        this.counterWrong = 0;
+        this.totalQuestions = 1;
+    }
 
 }
 
