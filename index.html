@@ -9,12 +9,12 @@
         <link rel="stylesheet" href="./styles/style.css"/>
     </head>
 
-    <body>
+    <body id="body" class="body">
 
 
         <!-- <audio controls>
             for autoplay: autoplay
-            <source src="audio/POL-color-blocks-short.wav" type="audio/ogg">
+            <source src="audio/POL-cheerful-day-short.wav" type="audio/ogg">
           Your browser does not support the audio element.
           </audio> -->
         
@@ -25,8 +25,8 @@
             <div class="card-body">
 
                 <div id="start-page">
-                    <img class="logo-img" src="/img/awesomelogo.png" alt="">
-                    <p class="card-text">Welcome to awesome trivia! <br> Get your best result out of ten questions.<br> Good luck!</p>
+                    <img class="logo-img" src="/img/awesomelogo.png" alt="logo-img">
+                    <p class="card-text">Welcome to awesome trivia! <br> Get your best result out of ten questions to win.<br> Good luck!</p>
                     <button type="button" class="btn btn-success" id="btn-start">START!</button>
                 </div>
 
@@ -36,10 +36,17 @@
                     <p id="counter"></p>
                 </div>
 
+                <div class="d-none" id="finish-page">
+                    <h1 id="result-title"></h1>
+                    <p id="counter-finish"></p>
+                    <button type="button" class="btn btn-success btn-end" id="btn-restart">Play Again</button>
+                </div>
+
             </div>
 
         </div class="container">
 
+<<<<<<< HEAD
             <div class="d-none row all-btns">
                 <button type="button" class="btn btn-light ans-btn" id="btn-1">Light</button>
                 <button type="button" class="btn btn-light ans-btn" id="btn-2">Light</button>
@@ -59,13 +66,22 @@
                 <button type="button" class="btn btn-light">Light</button>
 
             </div>
+=======
+        <div id="btn-container">
+                <div class="d-none row all-btns">
+                    <button type="button" class="btn btn-light ans-btn" id="btn-1">Light</button>
+                    <button type="button" class="btn btn-light ans-btn" id="btn-2">Light</button>
+                </div>
+        
+                <div class="d-none row all-btns">
+                    <button type="button" class="btn btn-light ans-btn" id="btn-3">Light</button>
+                    <button type="button" class="btn btn-light ans-btn" id="btn-4">Light</button>
+                </div>
+        </div>
+>>>>>>> 1c66edf82e61eea7addc2ad4548606d2bf20f7a4
         <div>
 
         </div>
-    
-        <h1>Awesome Trivia</h1>
-      <h1>Heading</h1>
-    
 
      <!-- javascript link    -->
     <script src="/js/logic.js"></script>
