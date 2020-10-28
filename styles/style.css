@@ -1,4 +1,4 @@
-body {
+.body {
     background-image: url(/img/pattern-black.png);
 }
 
@@ -70,23 +70,23 @@ body {
 }
 
 .background-literature{
-    background-image: url(/img/pattern-blue.png);
+    background-image: url("../img/pattern-blue.png");
 }
 
 .background-knowledge{
-    background-image: url(/img/pattern-yellow.png);
+    background-image: url("../img/pattern-yellow.png");
 }
 
 .background-films {
-    background-image: url(/img/pattern-purple.png);
+    background-image: url("../img/pattern-purple.png");
 }
 
 .background-food {
-    background-image: url(/img/pattern-red.png);
+    background-image: url("../img/pattern-red.png");
 }
 
 .background-science {
-    background-image: url(/img/pattern-green.png);
+    background-image: url("../img/pattern-green.png");
 }
 
 #container-buttons {

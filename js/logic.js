@@ -12,13 +12,12 @@ class Trivia {
         this.counterCorrect = 0
         this.counterWrong = 0
         this.correctAns = ''
+        this.totalQuestions = 0
         
     }
 
     startClick() {
        
-        //toggle between background
-        
         // SHOW THE BUTTONS ON START CLICK
         const hiddenButtons = (document.getElementsByClassName("all-btns"))
         for(let button of hiddenButtons){button.classList.remove("d-none")}
@@ -51,10 +50,64 @@ class Trivia {
         // show the question on the card
         document.getElementById("display-question").innerHTML = questionPicked
         
-        
+        // change background for each question
+        switch(categoryPicked) {
+            case 'Literature':
+                // document.getElementById("body").classList.remove
+                document.getElementById("body").classList = ''
+                document.getElementById("body").classList.add("background-literature") 
+                break;
+            case 'General Knowledge':
+                document.getElementById("body").classList = ''
+                document.getElementById("body").classList.add("background-knowledge") 
+                break;
+            case 'Food and Drink':
+                document.getElementById("body").classList = ''
+                document.getElementById("body").classList.add("background-food") 
+                break;
+            case 'Science and Geography':
+                document.getElementById("body").classList = ''
+                document.getElementById("body").classList.add("background-science") 
+                break;
+            case 'Films':
+                document.getElementById("body").classList = ''
+                document.getElementById("body").classList.add("background-films") 
+                break;
+        }
+
+        // counter on how many questions
+        this.totalQuestions++
+
         // show category on card
         document.getElementById("category-card").innerHTML = categoryPicked
         return questionPicked + categoryPicked 
+
+    }
+
+    resetButtons() {
+        if (this.questionDisplay()) {
+           
+            let clickedButtons = document.getElementsByClassName("btn")
+            for  ( var i = 0; i < clickedButtons.length; i++) {
+                
+                
+                if (clickedButtons[i].className.includes("btn-danger")) {
+                    // console.log(clickedButtons[i].classList.remove("btn-danger"))
+                    // return clickedButtons.className = "btn btn-light ans-btn"
+                    clickedButtons[i].classList.remove("btn-danger")
+                    clickedButtons[i].classList.add("btn-light")
+                    
+                    // return clickedButtons[i].className.split("btn-danger")
+
+                } else if (clickedButtons[i].className.includes("btn-success")) {
+                    // console.log(clickedButtons[i].classList.remove("btn-success"))
+                    // return clickedButtons.className = "btn btn-light ans-btn"
+                    clickedButtons[i].classList.remove("btn-success")
+                    clickedButtons[i].classList.add("btn-light")
+                }
+            }
+        }
+
     }
 
     // check if clicked button is correct
@@ -62,9 +115,7 @@ class Trivia {
     // increment wrong and correct internal counter
     // move to next question (call questionDisplay)
     isCorrect(content) {
-        
 
-        console.log( content ,this.correctAns)
         if (content === this.correctAns) {
             this.counterCorrect++
             return true
@@ -74,6 +125,14 @@ class Trivia {
         }
 
     }
+
+    isFinished() {
+        if (this.totalQuestions === 10){
+          return true;
+        } else {
+          return false;
+        }
+      }
 
 
     // progressDisplay() {
