@@ -67,48 +67,7 @@ var questions = [{
 }
 ] 
 
-//create Trivia class w/ Methods
-
-//Event listener?
-
-// btn-success.addEventListener('click', () => {
-    // if (btnLeft.innerHTML === "START"){
-    //   chronometer.startClick(printTime);
-    //   setStopBtn();
-    //   setSplitBtn();
-
-// class Trivia {
-//     constructor(questions){
-//         this.questions = questions;
-
-//         this.counterCorrect = 0
-//         this.counterWrong = 0
-//     }
-
-//     startClick() {
-//         //show hidden buttons
-//         //question display
-//         //toggle between background
-//         document.getElementsByClassName("all-btns").setClass.remove("d-none")
-//         console.log(document.getElementsByClassName("all-btns"))
-
-//         document.getElementById("start-page").setClass.add("d-none")
-        
-//     }
-
-//     //getting the random question
-//     questionDisplay(){
-//         let randomQuestion = Math.floor(Math.random() * this.questions.length);
-//         let questionPicked = this.questions[randomQuestion].ques;
-//         this.questions.splice(randomQuestion, 1)
-
-//         // console.log(this.questions[randomQuestion].ques)
-
-//         return questionPicked
-    
-//     }
-
-// }
+// CODE
 
 const triviaGame = new Trivia(questions);
 
@@ -137,13 +96,22 @@ btn1.addEventListener('click', function() {
         btn1.classList.remove("btn-light")
         btn1.classList.add("btn-danger")
     }
-    //set timeout 1 sec
-    //cal questionDisplay
-    triviaGame.questionDisplay();
+   
+    if (triviaGame.isFinished()) {
+        setTimeout(function() {
+            triviaGame.gameEnd();
+            }, 1000);
+    } else {
+        setTimeout(function() {
+            triviaGame.questionDisplay();
+            triviaGame.resetButtons();
+            }, 1000);
+    }
+    
 })
 
 btn2.addEventListener('click', function() {
-    console.log(btn2.innerHTML)
+
     if (triviaGame.isCorrect(btn2.innerHTML)) {
         //change button to green  
         btn2.classList.remove("btn-light")
@@ -153,9 +121,12 @@ btn2.addEventListener('click', function() {
         btn2.classList.remove("btn-light")
         btn2.classList.add("btn-danger")
     }
-    //set timeout 1 sec
-    //cal questionDisplay
-    triviaGame.questionDisplay();
+    
+    setTimeout(function() {
+        triviaGame.questionDisplay();
+        triviaGame.resetButtons();
+        }, 1000);
+    
 })
 
 btn3.addEventListener('click', function() {
@@ -168,9 +139,11 @@ btn3.addEventListener('click', function() {
         btn3.classList.remove("btn-light")
         btn3.classList.add("btn-danger")
     }
-    //set timeout 1 sec
-    //cal questionDisplay
-    triviaGame.questionDisplay();
+
+    setTimeout(function() {
+        triviaGame.questionDisplay();
+        triviaGame.resetButtons();
+        }, 1000);
 })
 
 btn4.addEventListener('click', function() {
@@ -183,7 +156,9 @@ btn4.addEventListener('click', function() {
         btn4.classList.remove("btn-light")
         btn4.classList.add("btn-danger")
     }
-    //set timeout 1 sec
-    //cal questionDisplay
-    triviaGame.questionDisplay();
+    
+    setTimeout(function() {
+        triviaGame.questionDisplay();
+        triviaGame.resetButtons();
+        }, 1000);
 })
