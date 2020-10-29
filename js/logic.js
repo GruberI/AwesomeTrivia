@@ -181,11 +181,12 @@ class Trivia {
         // console.log(this.counterCorrect)
     }
 
-    restart(){
-        this.counterCorrect = 0;
-        this.counterWrong = 0;
-        this.totalQuestions = 1;
-    }
+    // restart(){
+    //     this.counterCorrect = 0;
+    //     this.counterWrong = 0;
+    //     this.totalQuestions = 1;
+
+    // }
 
 }
 
