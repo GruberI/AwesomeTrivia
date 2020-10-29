@@ -118,7 +118,7 @@ var questions = [{
     ans: ["1995", "1999", "1990", "1989"],
     correct: "1995",
     category: "Film"
-}
+},
 
 {
     ques: "What is the name of the hottest pepper in the world?",
