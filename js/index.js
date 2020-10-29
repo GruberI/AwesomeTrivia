@@ -139,7 +139,7 @@ var questions = [{
     category: "Science and Geography"
 },
 {
-    ques: "Who played James Bond in "For Your Eyes Only"??",
+    ques: "Who played James Bond in 'For Your Eyes Only'?",
     ans: ["Daniel Craig", "Roger Moore", "Pierce Brosnan", "Tomothy Dalton"],
     correct: "Roger Moore",
     category: "Film"
