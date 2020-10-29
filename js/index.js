@@ -4,7 +4,7 @@ var questions = [{
     ans: ["New York", "Miami", "Seattle", "San Francisco"],
     correct: "Seattle",
     category: "Food and Drink"
-},
+}, 
 {
     ques: "What is the term for dry Champagne?",
     ans: ["Pinot Noir", "Chardonnay", "Sauvignon Blanc", "Brut"],
@@ -119,7 +119,6 @@ var questions = [{
     correct: "1995",
     category: "Film"
 },
-
 {
     ques: "What is the name of the hottest pepper in the world?",
     ans: ["Tabasco", "Habanero", "Jalapeños", "Carolina Reaper"],
@@ -394,9 +393,10 @@ btn4.addEventListener('click', function() {
 
 btnRestart.addEventListener('click', function(){
     // triviaGame.startClick();
-    triviaGame.restart();
-    triviaGame.questionDisplay();
+    // triviaGame.restart();
+    // triviaGame.questionDisplay();
 
-    document.getElementById("finish-page").classList.add("d-none")
-    document.getElementById("start-page").classList.remove("d-none")
+    // document.getElementById("finish-page").classList.add("d-none")
+    // document.getElementById("start-page").classList.remove("d-none")
+    location.reload();
 })
