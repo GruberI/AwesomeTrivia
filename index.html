@@ -17,36 +17,46 @@
             <source src="audio/POL-good-morning-short.wav" type="audio/ogg">
           Your browser does not support the audio element.
           </audio> -->
+
+          <section class="container-fluid">
+            <section class="row justify-content-center">
+                <section class="col-12 col-sm-6 col-md-5">
+                    <form class="form-container">
+
+                        <div id="start-page">
+                            <img class="logo-img" src="/img/awesomelogo.png" alt="logo-img">
+                            <p class="card-text">Welcome to awesome trivia! <br> Get your best result out of ten questions to win.<br> Good luck!</p>
+                            <button type="button" class="btn btn-success" id="btn-start">START!</button>
+                        </div>
         
+                        <div id="questions-page"  class="blockquote text-center">
+                            <h1 class="box col" id="display-question"></h1>
+                            <p id="category-card"></p>
+                            <p id="counter"></p>
+                        </div>
+        
+                        <div class="d-none" id="finish-page">
+                            <h1 id="result-title"></h1>
+                            <p id="counter-finish"></p>
+                            <button type="button" class="btn btn-success btn-end" id="btn-restart">Play Again</button>
+                        </div>
+                       
+                    </form>
+                </section>
+            </section>
+        </section>
 
-`
-    
-        <div class="card mx-auto" style="width: 52rem; height: 30rem;">
-            <div class="card-body">
-
-                <div id="start-page">
-                    <img class="logo-img" src="/img/awesomelogo.png" alt="logo-img">
-                    <p class="card-text">Welcome to awesome trivia! <br> Get your best result out of ten questions to win.<br> Good luck!</p>
-                    <button type="button" class="btn btn-success" id="btn-start">START!</button>
-                </div>
-
-                <div id="questions-page">
-                    <h1 id="display-question"></h1>
-                    <p id="category-card"></p>
-                    <p id="counter"></p>
-                </div>
-
-                <div class="d-none" id="finish-page">
-                    <h1 id="result-title"></h1>
-                    <p id="counter-finish"></p>
-                    <button type="button" class="btn btn-success btn-end" id="btn-restart">Play Again</button>
-                </div>
-
+        <div id="btn-container" class="all-btns container col-12 col-sm-6 col-md-3">
+            <div class="row all-btns d-none">
+                <button type="button" class="btn btn-light ans-btn box col" id="btn-1">Light</button>
+                <button type="button" class="btn btn-light ans-btn box col" id="btn-2">Light</button>
+              <div class="w-100" ></div>
+                <button type="button" class="btn btn-light ans-btn box col" id="btn-3">Light</button>
+                <button type="button" class="btn btn-light ans-btn box col" id="btn-4">Light</button>
             </div>
+          </div>
 
-        </div class="container">
-
-        <div id="btn-container">
+        <!-- <div id="btn-container">
                 <div class="d-none row all-btns">
                     <button type="button" class="btn btn-light ans-btn" id="btn-1">Light</button>
                     <button type="button" class="btn btn-light ans-btn" id="btn-2">Light</button>
@@ -56,10 +66,10 @@
                     <button type="button" class="btn btn-light ans-btn" id="btn-3">Light</button>
                     <button type="button" class="btn btn-light ans-btn" id="btn-4">Light</button>
                 </div>
-        </div>
-        <div>
+        </div> -->
+        
 
-        </div>
+    </div>
 
      <!-- javascript link    -->
     <script src="/js/logic.js"></script>

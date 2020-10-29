@@ -2,9 +2,17 @@
     background-image: url(/img/pattern-black.png);
 }
 
-.card {
+/* .card {
     margin-top: 6rem;
     position: relative;
+} */
+.form-container {
+    background-color: white;
+    height: 450px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5vh;
+    
 }
 
 .logo-img {
@@ -16,17 +24,24 @@
 }
 
 .card-text {
-    font-size: 1.5em;
+    /* font-size: 1.2em; */
     margin: 50px;
     margin-top: 40px;
     text-align: center;
 }
 
+#questions-page {
+    justify-content: center;
+
+}
+
 #display-question {
-    margin-top: 125px;
-    margin-left: 80px;
+    justify-content: center;
     text-align: center;
-    width: 80%;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 2.7em;
+    line-height: 1.3em;
     
 }
 
@@ -49,29 +64,38 @@
 }
 
 #category-card {
-    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
     position: absolute;
     bottom: 0;
     padding-left: 20px;
 }
 
 #counter {
-    font-size: 2em;
+    font-size: 1em;
     position: absolute;
     bottom: 0;
     right:0;
-    padding-right: 45px;
+    padding-right: 25px;
 }
 
-.ans-btn {
+/* .ans-btn {
     width: 200px;
     height: 60px;
     margin: 10px;
+} */
+.box {
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    
 }
 
+
 #btn-container {
-    margin-top: 110px;
-    position: absolute;
+    margin-top: 580px;
+    position: fixed;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -85,6 +109,24 @@
     transform: translate(-50%, -50%);
     padding-left: 50px;
     padding-right: 50px;
+}
+
+#result-title {
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1,3em;
+    padding-bottom: 10px;
+}
+
+#counter-finish {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1,3em;
+    color: darkred;
 }
 
 .background-literature{
@@ -112,6 +154,14 @@
 }
 
 .btn-end {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
     background-color: green;
     color: white;
 }
