@@ -164,15 +164,9 @@ class Trivia {
 
 
           if (this.counterCorrect >= 1 && this.counterCorrect <= 5) {
-<<<<<<< HEAD
             document.getElementById("result-title").innerHTML = "&#129300 Umm, you can do better!"
           } else if (this.counterCorrect >= 6 && this.counterCorrect < 8) {
             document.getElementById("result-title").innerHTML = "&#129299 Not that bad...(but not great either)!"
-=======
-            document.getElementById("result-title").innerHTML = "Umm, not so good. You can do better!"
-          } else if (this.counterCorrect >= 6 && this.counterCorrect < 8) {
-            document.getElementById("result-title").innerHTML = "Not that bad...(but not great either)..."
->>>>>>> 006b565f2cc441e1b45996d3095f28ab29b2b23b
           } else if (this.counterCorrect >= 8) {
             document.getElementById("result-title").innerHTML = "&#129321 Wow, you must be a genius!"
           } else {
