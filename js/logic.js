@@ -1,9 +1,3 @@
-//BUTTON START -> class Question
-
-//class Question 
-// - Will display a random quesiton from the array
-// - Will show the 4 buttons with the answers on the bottom
-// - Will display the counter set at 0 (counter will just say the number of the question)
 
 class Trivia {
     constructor(questions){
