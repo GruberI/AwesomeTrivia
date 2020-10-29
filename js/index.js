@@ -392,11 +392,6 @@ btn4.addEventListener('click', function() {
 })
 
 btnRestart.addEventListener('click', function(){
-    // triviaGame.startClick();
-    // triviaGame.restart();
-    // triviaGame.questionDisplay();
-
-    // document.getElementById("finish-page").classList.add("d-none")
-    // document.getElementById("start-page").classList.remove("d-none")
+    
     location.reload();
 })
