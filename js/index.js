@@ -55,8 +55,8 @@ var questions = [{
 },
 {
     ques: "Name the cities to which the title 'A Tale of Two Cities' refers.",
-    ans: ["London & Paris", "Minneapolis & Saint Paul", "Amsterdam & Brussels", "Shanghai & Seoul"],
-    correct: "London & Paris",
+    ans: ["London and Paris", "Minneapolis and Saint Paul", "Amsterdam and Brussels", "Shanghai and Seoul"],
+    correct: "London and Paris",
     category: "Literature"
 },
 {

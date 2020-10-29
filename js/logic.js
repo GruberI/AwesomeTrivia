@@ -170,9 +170,9 @@ class Trivia {
 
 
           if (this.counterCorrect >= 1 && this.counterCorrect <= 5) {
-            document.getElementById("result-title").innerHTML = "Umm, you can do better!"
+            document.getElementById("result-title").innerHTML = "Umm, not so good. You can do better!"
           } else if (this.counterCorrect >= 6 && this.counterCorrect < 8) {
-            document.getElementById("result-title").innerHTML = "Not that bad...(but not great either)!"
+            document.getElementById("result-title").innerHTML = "Not that bad...(but not great either)..."
           } else if (this.counterCorrect >= 8) {
             document.getElementById("result-title").innerHTML = "Wow, you must be a genius!"
           } else {

@@ -30,6 +30,24 @@
     
 }
 
+#result-title{
+    margin-top: 125px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+#counter-finish{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#btn-restart {
+    margin-left: 350px;
+}
+
 #category-card {
     font-size: 2em;
     position: absolute;
