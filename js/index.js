@@ -43,7 +43,7 @@ var questions = [{
 },
 {
     ques: "What is the largest country in South America?",
-    ans: ["Peru", "Columbia", "Chile", "Brazil"],
+    ans: ["Peru", "Colombia", "Chile", "Brazil"],
     correct: "Brazil",
     category: "Science and Geography"
 },

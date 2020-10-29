@@ -170,13 +170,13 @@ class Trivia {
 
 
           if (this.counterCorrect >= 1 && this.counterCorrect <= 5) {
-            document.getElementById("result-title").innerHTML = "Umm, you can do better!"
+            document.getElementById("result-title").innerHTML = "&#129300 Umm, you can do better!"
           } else if (this.counterCorrect >= 6 && this.counterCorrect < 8) {
-            document.getElementById("result-title").innerHTML = "Not that bad...(but not great either)!"
+            document.getElementById("result-title").innerHTML = "&#129299 Not that bad...(but not great either)!"
           } else if (this.counterCorrect >= 8) {
-            document.getElementById("result-title").innerHTML = "Wow, you must be a genius!"
+            document.getElementById("result-title").innerHTML = "&#129321 Wow, you must be a genius!"
           } else {
-            document.getElementById("result-title").innerHTML = "Wow...not one, better go study!"
+            document.getElementById("result-title").innerHTML = "&#128584 Wow...not one, better go study!"
           }
 
       } 
