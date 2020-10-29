@@ -1,0 +1,195 @@
+.body {
+    background-image: url("../img/pattern-black.png");
+}
+
+
+.form-container {
+    background-color: white;
+    height: 450px;
+    /* width: 700px; */
+    border-radius: 10px;
+    position: absolute;
+    top: 5vh;
+    
+}
+
+audio {
+   width: 100px;
+}
+
+.logo-img {
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#question-container {
+    margin: 20px;
+}
+
+#finished-container {
+    margin: 20px;
+}
+
+.card-text {
+    font-size: 1em;
+    margin: 50px;
+    /* margin-top: 40px; */
+    text-align: center;
+}
+
+#questions-page {
+    justify-content: center;
+
+}
+
+#display-question {
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 2.7em;
+    line-height: 1.3em;
+    
+}
+
+#result-title{
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+#btn-restart {
+    margin: 0;
+    margin-top: 15px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#category-card {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+}
+
+.category-science {
+    color: #4F8D53;
+}
+.category-films {
+    color: #83428F;
+}
+.category-knowledge {
+    color: #F19F1F;
+}
+.category-food {
+    color: #D81F26;
+}
+.category-literature {
+    color: #2069A7;
+}
+
+
+#counter {
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    padding-right: 25px;
+}
+
+/* .ans-btn {
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+} */
+.box {
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+
+#btn-container {
+    margin-top: 580px;
+    position: fixed;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#btn-start {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#result-title {
+    justify-content: center;
+    text-align: center;
+    /* padding-top: 50px; */
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1,3em;
+    padding-bottom: 10px;
+}
+
+#counter-finish {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1,3em;
+    color: darkred;
+}
+
+.background-literature{
+    background-image: url("../img/pattern-blue.png");
+}
+
+.background-knowledge{
+    background-image: url("../img/pattern-yellow.png");
+}
+
+.background-films {
+    background-image: url("../img/pattern-purple.png");
+}
+
+.background-food {
+    background-image: url("../img/pattern-red.png");
+}
+
+.background-science {
+    background-image: url("../img/pattern-green.png");
+}
+
+#container-buttons {
+    visibility: hidden;
+}
+
+.btn-end {
+    margin: 0;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    padding-right: 50px; */
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+}
