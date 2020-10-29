@@ -12,46 +12,38 @@ class Trivia {
 
     startClick() {
        
-        // SHOW THE BUTTONS ON START CLICK
         const hiddenButtons = (document.getElementsByClassName("all-btns"))
         for(let button of hiddenButtons){button.classList.remove("d-none")}
-        
 
-        // START PAGE SHOULD HIDE
         const hiddenStart = (document.getElementById("start-page"))
         hiddenStart.classList.add("d-none")
-
-        //FINISH PAGE
-        // const hiddenFinish = (document.getElementById("finish-page"))
-        // hiddenFinish.classList.add("d-none")
-
     }
 
     questionDisplay(){
-        //pick random question and category
+        
         let randomQuestion = Math.floor(Math.random() * this.questions.length);
         let questionPicked = this.questions[randomQuestion].ques;
         let categoryPicked = this.questions[randomQuestion].category;
         let answersPicked = this.questions[randomQuestion].ans;
-        // let correctAnswer = this.questions[randomQuestion].correct;
+       
         this.correctAns = this.questions[randomQuestion].correct;
 
-        // link answers to buttons
+       
         document.getElementById("btn-1").innerHTML = answersPicked[0]
         document.getElementById("btn-2").innerHTML = answersPicked[1]
         document.getElementById("btn-3").innerHTML = answersPicked[2]
         document.getElementById("btn-4").innerHTML = answersPicked[3]
 
-        // take out question of array
+       
         this.questions.splice(randomQuestion, 1)
 
-        // show the question on the card
+      
         document.getElementById("display-question").innerHTML = questionPicked
         
-        // change background for each question
+        
         switch(categoryPicked) {
             case 'Literature':
-                // document.getElementById("body").classList.remove
+                
                 document.getElementById("body").classList = ''
                 document.getElementById("body").classList.add("background-literature") 
                 break;
@@ -73,47 +65,34 @@ class Trivia {
                 break;
         }
 
-        // show category on card
+        
         document.getElementById("category-card").innerHTML = categoryPicked
         this.progressDisplay()
         this.resetButtons();
 
-        // return questionPicked + categoryPicked 
-
     }
 
-    
-
     resetButtons() {
-        
-           
-            let clickedButtons = document.getElementsByClassName("btn")
-            for  ( var i = 0; i < clickedButtons.length; i++) {
+        let clickedButtons = document.getElementsByClassName("btn")
+        for  ( var i = 0; i < clickedButtons.length; i++) {
                 
                 
-                if (clickedButtons[i].className.includes("btn-danger")) {
-                    // console.log(clickedButtons[i].classList.remove("btn-danger"))
-                    // return clickedButtons.className = "btn btn-light ans-btn"
-                    clickedButtons[i].classList.remove("btn-danger")
-                    clickedButtons[i].classList.add("btn-light")
+             if (clickedButtons[i].className.includes("btn-danger")) {
+                   
+                clickedButtons[i].classList.remove("btn-danger")
+                clickedButtons[i].classList.add("btn-light")
+      
+            } else if (clickedButtons[i].className.includes("btn-success")) {
                     
-                    // return clickedButtons[i].className.split("btn-danger")
-
-                } else if (clickedButtons[i].className.includes("btn-success")) {
-                    // console.log(clickedButtons[i].classList.remove("btn-success"))
-                    // return clickedButtons.className = "btn btn-light ans-btn"
-                    clickedButtons[i].classList.remove("btn-success")
-                    clickedButtons[i].classList.add("btn-light")
+                clickedButtons[i].classList.remove("btn-success")
+                clickedButtons[i].classList.add("btn-light")
                 }
             }
         
 
     }
 
-    // check if clicked button is correct
-    // increment counter 
-    // increment wrong and correct internal counter
-    // move to next question (call questionDisplay)
+    
     isCorrect(content) {
 
         if (content === this.correctAns) {
@@ -144,16 +123,16 @@ class Trivia {
 
       gameEnd(){
 
-        // Hide THE BUTTONS ON START CLICK
+        
         const hiddenButtons = (document.getElementsByClassName("all-btns"));
         for(let button of hiddenButtons){button.classList.add("d-none")};
         
 
-        // Question page should hide
+        
         const hiddenQuestion = (document.getElementById("questions-page"));
         hiddenQuestion.classList.add("d-none");
 
-        //show finish page
+        
         const hiddenFinish = (document.getElementById("finish-page"));
         hiddenFinish.classList.remove("d-none");
 
@@ -164,13 +143,13 @@ class Trivia {
 
 
           if (this.counterCorrect >= 1 && this.counterCorrect <= 5) {
-            document.getElementById("result-title").innerHTML = "&#129300 Umm, you can do better!"
+            document.getElementById("result-title").innerHTML = "&#129300 <br> Umm, you can do better!"
           } else if (this.counterCorrect >= 6 && this.counterCorrect < 8) {
-            document.getElementById("result-title").innerHTML = "&#129299 Not that bad...(but not great either)!"
+            document.getElementById("result-title").innerHTML = "&#129299 <br>Not that bad...(but not great either)!"
           } else if (this.counterCorrect >= 8) {
-            document.getElementById("result-title").innerHTML = "&#129321 Wow, you must be a genius!"
+            document.getElementById("result-title").innerHTML = "&#129321 <br>Wow, you must be a genius!"
           } else {
-            document.getElementById("result-title").innerHTML = "&#128584 Wow...not one, better go study!"
+            document.getElementById("result-title").innerHTML = "&#128584 <br>Wow...not one, better go study!"
           }
 
       } 
@@ -178,34 +157,10 @@ class Trivia {
 
     progressDisplay() {
         document.getElementById("counter").innerHTML = `Question: ${this.totalQuestions} / 10`
-        // console.log(this.counterCorrect)
+      
     }
-
-    // restart(){
-    //     this.counterCorrect = 0;
-    //     this.counterWrong = 0;
-    //     this.totalQuestions = 1;
-
-    // }
 
 }
 
-
-
-// - METHOD TOGGLE CATEGORY 
-//      - Will update category and background 
-
-
-
-// - METHOD ANSWER
-//      - Will update counter and move to the next question
-//      - Will update internal correct/incorrect counter
-//      - Will take out the question from the array, preventing it from being picked up again
-//      - Will check if we are at end of game
-
-// - END OF GAME METHOD
-//      - Will display a different message depending on the grades
-//      - Will display total counter
-//      - Will give the option to restart
 
 
