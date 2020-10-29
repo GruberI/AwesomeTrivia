@@ -4,7 +4,7 @@ var questions = [{
     ans: ["New York", "Miami", "Seattle", "San Francisco"],
     correct: "Seattle",
     category: "Food and Drink"
-},
+}, 
 {
     ques: "What is the term for dry Champagne?",
     ans: ["Pinot Noir", "Chardonnay", "Sauvignon Blanc", "Brut"],
@@ -119,7 +119,6 @@ var questions = [{
     correct: "1995",
     category: "Film"
 },
-
 {
     ques: "What is the name of the hottest pepper in the world?",
     ans: ["Tabasco", "Habanero", "Jalapeños", "Carolina Reaper"],
@@ -213,7 +212,59 @@ var questions = [{
 }
 ] 
 
+
+//create Trivia class w/ Methods
+
+//Event listener?
+
+
+// btn-success.addEventListener('click', () => {
+    // if (btnLeft.innerHTML === "START"){
+    //   chronometer.startClick(printTime);
+    //   setStopBtn();
+    //   setSplitBtn();
+
+// class Trivia {
+//     constructor(questions){
+//         this.questions = questions;
+
+//         this.counterCorrect = 0
+//         this.counterWrong = 0
+//     }
+
+//     startClick() {
+//         //show hidden buttons
+//         //question display
+//         //toggle between background
+//         document.getElementsByClassName("all-btns").setClass.remove("d-none")
+//         console.log(document.getElementsByClassName("all-btns"))
+
+   // startClick() {
+        //show hidden buttons
+        //question display
+
+  //  }
+
+//         document.getElementById("start-page").setClass.add("d-none")
+        
+//     }
+
+//     //getting the random question
+//     questionDisplay(){
+//         let randomQuestion = Math.floor(Math.random() * this.questions.length);
+//         let questionPicked = this.questions[randomQuestion].ques;
+//         this.questions.splice(randomQuestion, 1)
+
+//         // console.log(this.questions[randomQuestion].ques)
+
+//         return questionPicked
+    
+//     }
+
+// }
+
 // CODE
+
 
 const triviaGame = new Trivia(questions);
 
@@ -341,10 +392,6 @@ btn4.addEventListener('click', function() {
 })
 
 btnRestart.addEventListener('click', function(){
-    // triviaGame.startClick();
-    triviaGame.restart();
-    triviaGame.questionDisplay();
-
-    document.getElementById("finish-page").classList.add("d-none")
-    document.getElementById("start-page").classList.remove("d-none")
+    
+    location.reload();
 })
