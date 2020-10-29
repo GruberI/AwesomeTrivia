@@ -119,10 +119,6 @@ var questions = [{
     correct: "1995",
     category: "Film"
 },
-<<<<<<< HEAD
-=======
-
->>>>>>> a1a4158f1670bd1c436f083e6a3fa077c9cbddfa
 {
     ques: "What is the name of the hottest pepper in the world?",
     ans: ["Tabasco", "Habanero", "Jalapeños", "Carolina Reaper"],

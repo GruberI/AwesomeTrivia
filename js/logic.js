@@ -46,22 +46,32 @@ class Trivia {
                 
                 document.getElementById("body").classList = ''
                 document.getElementById("body").classList.add("background-literature") 
+                document.getElementById("category-card").classList = ''
+                document.getElementById("category-card").classList.add("category-literature")
                 break;
             case 'General Knowledge':
                 document.getElementById("body").classList = ''
                 document.getElementById("body").classList.add("background-knowledge") 
+                document.getElementById("category-card").classList = ''
+                document.getElementById("category-card").classList.add("category-knowledge")
                 break;
             case 'Food and Drink':
                 document.getElementById("body").classList = ''
                 document.getElementById("body").classList.add("background-food") 
+                document.getElementById("category-card").classList = ''
+                document.getElementById("category-card").classList.add("category-food")
                 break;
             case 'Science and Geography':
                 document.getElementById("body").classList = ''
                 document.getElementById("body").classList.add("background-science") 
+                document.getElementById("category-card").classList = ''
+                document.getElementById("category-card").classList.add("category-science")
                 break;
             case 'Films':
                 document.getElementById("body").classList = ''
                 document.getElementById("body").classList.add("background-films") 
+                document.getElementById("category-card").classList = ''
+                document.getElementById("category-card").classList.add("category-films")
                 break;
         }
 

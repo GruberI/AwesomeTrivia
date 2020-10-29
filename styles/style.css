@@ -81,6 +81,23 @@
     padding-left: 20px;
 }
 
+.category-science {
+    color: #4F8D53;
+}
+.category-films {
+    color: #83428F;
+}
+.category-knowledge {
+    color: #F19F1F;
+}
+.category-food {
+    color: #D81F26;
+}
+.category-literature {
+    color: #2069A7;
+}
+
+
 #counter {
     font-size: 1em;
     position: absolute;
