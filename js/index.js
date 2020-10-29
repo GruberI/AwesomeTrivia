@@ -43,7 +43,7 @@ var questions = [{
 },
 {
     ques: "What is the largest country in South America?",
-    ans: ["Peru", "Columbia", "Chile", "Brazil"],
+    ans: ["Peru", "Colombia", "Chile", "Brazil"],
     correct: "Brazil",
     category: "Science and Geography"
 },
@@ -55,8 +55,8 @@ var questions = [{
 },
 {
     ques: "Name the cities to which the title 'A Tale of Two Cities' refers.",
-    ans: ["London & Paris", "Minneapolis & Saint Paul", "Amsterdam & Brussels", "Shanghai & Seoul"],
-    correct: "London & Paris",
+    ans: ["London and Paris", "Minneapolis and Saint Paul", "Amsterdam and Brussels", "Shanghai and Seoul"],
+    correct: "London and Paris",
     category: "Literature"
 },
 {
@@ -118,6 +118,98 @@ var questions = [{
     ans: ["1995", "1999", "1990", "1989"],
     correct: "1995",
     category: "Film"
+},
+
+{
+    ques: "What is the name of the hottest pepper in the world?",
+    ans: ["Tabasco", "Habanero", "Jalapeños", "Carolina Reaper"],
+    correct: "Carolina Reaper",
+    category: "Food and Drink"
+},
+{
+    ques: "How many valves does the heart have?",
+    ans: ["Six", "Four", "Eight", "Three"],
+    correct: "Four",
+    category: "General Knowledge"
+},
+{
+    ques: "What river runs through Baghdad?",
+    ans: ["Nile", "Ganges", "Tigris", "Mississippi"],
+    correct: "Tigris",
+    category: "Science and Geography"
+},
+{
+    ques: "Who played James Bond in "For Your Eyes Only"??",
+    ans: ["Daniel Craig", "Roger Moore", "Pierce Brosnan", "Tomothy Dalton"],
+    correct: "Roger Moore",
+    category: "Film"
+},
+{
+    ques: "What novel begins with:'Call me Ishmael'?",
+    ans: ["Moby Dick", "Omoo", "The Sea", "Twenty Thousand Leagues Under the Seas"],
+    correct: "Moby Dick",
+    category: "Literature"
+},
+
+{
+    ques: "Yerevan is the capital of what country?",
+    ans: ["Georgia", "Armenia", "Iran", "Azerbaijan"],
+    correct: "Armenia",
+    category: "Science and Geography"
+},
+{
+    ques: "What do you call a vegetarian who only consumes chicken and fowl but no other meats?",
+    ans: ["Pollotarian", "Pescatarian", "Totalitarian", "Kiptarian"],
+    correct: "Pollotarian",
+    category: "Food and Drink"
+},
+{
+    ques: "What is the only edible food that is said to never spoils?",
+    ans: ["Peanut Butter", "Dried Beans", "Canned foods", "Honey"],
+    correct: "Honey",
+    category: "Food and Drink"
+},
+{
+    ques: "What is a group of cats called?",
+    ans: ["A Clowder", "A Murder", "A Litter", "A Shadow"],
+    correct: "A Clowder",
+    category: "Science and Geography"
+},
+{
+    ques: "In what year did The Beatles split up?",
+    ans: ["1970", "1974", "1978", "1980"],
+    correct: "1970",
+    category: "General Knowledge"
+},
+{
+    ques: "How many horses are on each team in a polo match?",
+    ans: ["6", "4", "2", "10"],
+    correct: "4",
+    category: "General Knowledge"
+},
+{
+    ques: "Which movie features an iconic dance scene between Uma Thurman and John Travolta?",
+    ans: ["Saturday Night Fever", "Dangerous Liaisons", "The Producers", "Pulp Fiction"],
+    correct: "Pulp Fiction",
+    category: "Films"
+},
+{
+    ques: "Who has won the most Oscars for acting in the history of the Academy Awards?",
+    ans: ["Daniel Day-Lewis", "Katharine Hepburn", "Meryl Streep", "Jack Nicholson"],
+    correct: "Katharine Hepburn",
+    category: "Films"
+},
+{
+    ques: "Emily Brontë's Wuthering Heights recounts the tragic romance between which two lovers?",
+    ans: ["Isabella and Hindley", "Catherine and Heathcliff", "Eleanor and Christian", "Brad and Angelina"],
+    correct: "Catherine and Heathcliff",
+    category: "Literature"
+},
+{
+    ques: "The Girl with the Dragoon Tattoo was originally published in which language?",
+    ans: ["Swedish", "Norweigian", "Danish", "English"],
+    correct: "Swedish",
+    category: "Literature"
 }
 ] 
 
