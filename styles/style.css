@@ -1,26 +1,28 @@
 .body {
-    background-image: url(./img/pattern-black.png);
+    background-image: url("../img/pattern-black.png");
 }
 
-/* .card {
-    margin-top: 6rem;
-    position: relative;
-} */
+
 .form-container {
     background-color: white;
     height: 450px;
+    /* width: 700px; */
     border-radius: 10px;
     position: absolute;
     top: 5vh;
     
 }
 
+audio {
+   width: 100px;
+}
+
 .logo-img {
-    padding-top: 40px;
+    padding-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
 }
 
 #question-container {
@@ -54,7 +56,7 @@
 }
 
 #result-title{
-    margin-top: 125px;
+    margin-top: 70px;
     margin-left: 80px;
     margin-bottom: 20px;
     text-align: center;
@@ -147,12 +149,6 @@
     padding-bottom: 10px;
 }
 
-/* #counter-finish{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-} */
-
 #counter-finish {
     justify-content: center;
     text-align: center;
@@ -180,15 +176,6 @@
 .background-science {
     background-image: url("../img/pattern-green.png");
 }
-
-.category-science {
-    color: 
-}
-
-
-
-
-
 
 #container-buttons {
     visibility: hidden;

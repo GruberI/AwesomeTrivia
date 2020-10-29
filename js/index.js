@@ -157,7 +157,7 @@ var questions = [{
     category: "Science and Geography"
 },
 {
-    ques: "What do you call a vegetarian who only consumes chicken and fowl but no other meats?",
+    ques: "What do you call a vegetarian who only consumes chicken but no other meats?",
     ans: ["Pollotarian", "Pescatarian", "Totalitarian", "Kiptarian"],
     correct: "Pollotarian",
     category: "Food and Drink"
@@ -187,19 +187,13 @@ var questions = [{
     category: "General Knowledge"
 },
 {
-    ques: "Which movie features an iconic dance scene between Uma Thurman and John Travolta?",
-    ans: ["Saturday Night Fever", "Dangerous Liaisons", "The Producers", "Pulp Fiction"],
-    correct: "Pulp Fiction",
-    category: "Films"
-},
-{
     ques: "Who has won the most Oscars for acting in the history of the Academy Awards?",
     ans: ["Daniel Day-Lewis", "Katharine Hepburn", "Meryl Streep", "Jack Nicholson"],
     correct: "Katharine Hepburn",
     category: "Films"
 },
 {
-    ques: "Emily Brontë's Wuthering Heights recounts the tragic romance between which two lovers?",
+    ques: "Wuthering Heights recounts the tragic romance between which two lovers?",
     ans: ["Isabella and Hindley", "Catherine and Heathcliff", "Eleanor and Christian", "Brad and Angelina"],
     correct: "Catherine and Heathcliff",
     category: "Literature"
@@ -211,60 +205,6 @@ var questions = [{
     category: "Literature"
 }
 ] 
-
-
-//create Trivia class w/ Methods
-
-//Event listener?
-
-
-// btn-success.addEventListener('click', () => {
-    // if (btnLeft.innerHTML === "START"){
-    //   chronometer.startClick(printTime);
-    //   setStopBtn();
-    //   setSplitBtn();
-
-// class Trivia {
-//     constructor(questions){
-//         this.questions = questions;
-
-//         this.counterCorrect = 0
-//         this.counterWrong = 0
-//     }
-
-//     startClick() {
-//         //show hidden buttons
-//         //question display
-//         //toggle between background
-//         document.getElementsByClassName("all-btns").setClass.remove("d-none")
-//         console.log(document.getElementsByClassName("all-btns"))
-
-   // startClick() {
-        //show hidden buttons
-        //question display
-
-  //  }
-
-//         document.getElementById("start-page").setClass.add("d-none")
-        
-//     }
-
-//     //getting the random question
-//     questionDisplay(){
-//         let randomQuestion = Math.floor(Math.random() * this.questions.length);
-//         let questionPicked = this.questions[randomQuestion].ques;
-//         this.questions.splice(randomQuestion, 1)
-
-//         // console.log(this.questions[randomQuestion].ques)
-
-//         return questionPicked
-    
-//     }
-
-// }
-
-// CODE
-
 
 const triviaGame = new Trivia(questions);
 
@@ -279,9 +219,6 @@ const btnRestart = document.getElementById('btn-restart')
 btnStart.addEventListener('click', function() {
     triviaGame.startClick();
     triviaGame.questionDisplay();
-    // triviaGame.progressDisplay();
-
-    
 });
 
 btn1.addEventListener('click', function() {
@@ -342,12 +279,12 @@ btn2.addEventListener('click', function() {
 btn3.addEventListener('click', function() {
     if (triviaGame.isCorrect(btn3.innerHTML)) {
         //change button to green
-        btn3.classList.remove("btn-light")
-        btn3.classList.add("btn-success")
+        btn3.classList.remove("btn-light");
+        btn3.classList.add("btn-success");
     } else {
         //change button to red
-        btn3.classList.remove("btn-light")
-        btn3.classList.add("btn-danger")
+        btn3.classList.remove("btn-light");
+        btn3.classList.add("btn-danger");
     }
 
     if (triviaGame.isFinished() === true) {
@@ -362,18 +299,18 @@ btn3.addEventListener('click', function() {
     }
 
     // counter on how many questions
-    triviaGame.totalQuestions++
+    triviaGame.totalQuestions++;
 })
 
 btn4.addEventListener('click', function() {
     if (triviaGame.isCorrect(btn4.innerHTML)) {
         //change button to green
-        btn4.classList.remove("btn-light")
-        btn4.classList.add("btn-success")
+        btn4.classList.remove("btn-light");
+        btn4.classList.add("btn-success");
     } else {
         //change button to red
-        btn4.classList.remove("btn-light")
-        btn4.classList.add("btn-danger")
+        btn4.classList.remove("btn-light");
+        btn4.classList.add("btn-danger");
     }
     
     if (triviaGame.isFinished() === true) {
@@ -388,10 +325,9 @@ btn4.addEventListener('click', function() {
     }
 
     // counter on how many questions
-    triviaGame.totalQuestions++
+    triviaGame.totalQuestions++;
 })
 
 btnRestart.addEventListener('click', function(){
-    
     location.reload();
 })
